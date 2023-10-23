@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/recuperar_senha.css"> 
+    <title>Recuperar Senha</title>
+</head>
+<body>
+    <h1>Recuperar Senha</h1>
+    <p>Por favor, insira o seu e-mail para recuperar a sua senha.</p>
+    
+    <form method="post" action="{% url 'cliente/recuperar_senha' %}">
+        {% csrf_token %}
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <input type="submit" value="Recuperar Senha">
+    </form>
+    <a href="{% url 'cliente:login' %}" class="voltar-link">Voltar para o Login</a>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="{% static '/css/perfil.css' %}">
+    
+</head>
+
+<header>
+    <h1>Meu Perfil</h1>
+</header>
+             
+    <div class="container">
+        <div class="profile-picture">
+           <img src="{% static 'img\logo.img.png' %}" alt="" width="150px" style="position: absolute; top: 0; left: 0;">
+        </div>
+        <h2>Informações Pessoais</h2>
+        <p><strong>Nome: </strong> {{ cliente.nome }} </p>
+        <p><strong>Email: </strong>{{ cliente.email }}</p>
+        <p><strong>Telefone: </strong> {{ cliente.telefone }}</p>
+               
+    </div>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Botões de Ação</title>
+    <style>
+        .profile-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 11px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            top: 10px; /* Distância do topo da tela */
+            right: 90px; /* Distância da direita da tela */
+        }
+
+        .profile-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botões de ação -->
+    <a href="{% url 'login' %}" class="logout-button">Sair</a>  
+</body>
+
+    <head>
+        <style>
+            .profile-button {
+                background-color: #007BFF;
+                color: #fff;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                position: absolute;
+                top: 10px; /* Distância do topo da tela */
+                right: 90px; /* Distância da direita da tela */
+            }
+    
+            .profile-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="{% url 'promocoes' %}">
+        <button class="profile-button">Promocões</button>
+    </body>
+<html>

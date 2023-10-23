@@ -1,0 +1,114 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fb9507;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #333;
+}
+
+.shadow-warning {
+    box-shadow: 0 4px 6px rgba(255, 165, 0, 0.1);
+}
+
+.text-warning {
+    color: #ffa500;
+}
+
+.promo-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.promo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.promo-list li {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.promo-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffa500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.promo-link:hover {
+    background-color: #ff8c00;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .promo-container {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

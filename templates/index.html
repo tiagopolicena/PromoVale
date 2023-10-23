@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promo Vale</title>    
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme.css' %}"> 
+    
+    
+    <section class="background" id="background">
+      <img class="background small-image " src="{% static 'img\logs_background.jpg' %}">        
+  </head>
+
+  
+  <body>
+    <main class="main" id="top">
+      <nav class="navbar " data-navbar-on-scroll="navbar-on-scroll">
+        <div class="container">
+          <class="navbar_logo" href="index.html"> 
+            <img class="logo" src="{% static 'img\logo_img2.png' %}">
+            <span class="text_logo">romoVale</span>
+          
+          <form class="botoes">
+            <button class="btn1" type="submit"> 
+              <i class="login-button"></i> 
+                <a href="{% url 'login' %}">Login</a>
+            </button>
+            <button class="btn2" type="submit">
+              <i class="cadastro-botton"></i> 
+                <a href="{% url 'registro' %}">Cadastrar</a>
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <section class="text_convite" id="home">
+        
+        <div class="container">
+          <div class="display-1">
+            <h1 class="display-1">Bem-vindo ao portal que vai revolucionar a forma como você economiza tempo e dinheiro!</h1>
+          </div>
+          <div class="display-2">
+            <h1 class="text_convite">
+              <br class="text_convite">Aqui, não poupamos esforços para oferecer as melhores promoções de supermercados e mercearias da sua região. Então, o que está esperando? Faça seu cadastro e faça seu acesso agora para descobrir as melhores promoções!!!
+            </h1>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =============================================== -->
+    <!-- End of Main Content -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  </body>
+  <footer class="footer">
+    &copy; 2023 PromoVale. Todos os direitos reservados.
+  </footer>
+</html>

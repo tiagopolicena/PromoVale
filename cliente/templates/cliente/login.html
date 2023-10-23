@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/login.css">  
+        <title>Promo Vale | Promoções, Marqueting &amp; Business </title>   
+        
+    <body>                 
+           <!-- Botão de login -->
+        <a href="{% url 'registro' %}" class="login-button">Cadastro</a>
+        
+      </body>
+    <body>
+        <div class="page">
+            <form method="POST" class="formLogin" action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                <h1>Login</h1>
+                <p>Digite os seus dados de acesso no campo abaixo.</p>
+                <label for="email">E-mail</label>
+                <input type="email" id='email' name='email' placeholder="Digite seu e-mail" autofocus="true" />
+                <label for="password">Senha</label>
+                <input type="password" id='senha' name='senha' placeholder="Digite seu e-mail" />
+                {% comment %} <a href="/recuperar_senha">Esqueci minha senha</a> {% endcomment %}
+                <input type="submit" value="Acessar" class="btn" />
+            </form>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

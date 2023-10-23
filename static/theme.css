@@ -1,0 +1,230 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos padrão para dispositivos maiores (desktop) */
+.text_convite {
+  font-size: 24px;
+  /* Outros estilos */
+}
+
+/* Estilos para dispositivos de tamanho médio (tablet) */
+@media (max-width: 768px) {
+  .text_convite {
+      font-size: 18px;
+      /* Outros estilos */
+  }
+}
+
+/* Estilos para dispositivos menores (smartphones) */
+@media (max-width: 480px) {
+  .text_convite {
+      font-size: 16px;
+      /* Outros estilos */
+  }
+}
+
+.text_logo {
+  font-size: 35px; /* Tamanho da fonte personalizado */
+  font-weight: bold; /* Estilo da fonte em negrito */
+  font-family: 'Arial', sans-serif; /* Especifica a família da fonte desejada */
+  background: linear-gradient(to right, #FFD700, #FF6347); /* Gradiente de cores para o texto */
+  -webkit-background-clip: text; /* Aplica o gradiente apenas ao texto no navegador Webkit (Safari, Chrome) */
+  background-clip: text; /* Aplica o gradiente apenas ao texto */
+  color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+}
+
+/* Para mover o texto para a direita */
+.text_logo.right {
+  text-align: right;
+}
+
+/* Para mover o texto para a esquerda */
+.text_logo.left {
+  text-align: left;
+}
+
+/* Estilos gerais */
+/* Definindo variáveis para tamanhos de texto */
+:root {
+  --font-size-main: 22px;
+  --font-size-heading: 24px;
+  --font-size-button: 20px;
+}
+
+/* Exemplo de aplicação das variáveis */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(to bottom, #FFD700, #FF6347);
+  color: #ffffff;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: var(--font-size-main);
+}
+
+.section h1 {
+  font-size: var(--font-size-heading);
+}
+
+.section .btn {
+  font-size: var(--font-size-button);
+}
+
+/* Estilos para a barra de navegação */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para a barra de navegação */
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar_logo img {
+  max-width: 20px;
+  margin-right: 10px;
+}
+
+.logo {
+  max-width: 80px;
+  margin-right: 5px;
+}
+
+.navbar-brand .text-gradient {
+  color: #ff9900; /* Cor do texto com gradiente */
+}
+
+/* Estilos para os botões no menu da barra de navegação */
+.navbar .btn {
+  margin: 5px;
+  color: #fff; /* Cor do texto do botão (branco) */
+  background-color: #007BFF;/* Cor de fundo azul do botão */
+  border: 1px solid #ff9900; /* Cor da borda do botão */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar .btn:hover {
+  color: #fff; /* Cor do texto no hover */
+}
+
+/* Estilos para o contêiner dos botões de login e cadastro */
+form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+/* Estilos para os botões de login */
+form .btn1 {
+  margin: 10px;
+  color: #d81919; /* Cor do texto do botão */
+  background-color: #007BFF;
+  border: 1px solid #00ffb38a; /* Cor da borda do botão */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px; /* Tamanho da fonte */
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form .btn1:hover {
+  background-color: #05f3bfef; /* Cor de fundo quando o mouse passa por cima (amarelo) */
+}
+
+/* Estilos para os botões de cadastro */
+form .btn2 {
+  margin: 10px;
+  color: #fff; /* Cor do texto do botão (branco) */
+  background-color: #007BFF; /* Cor de fundo azul do botão */
+  border: 1px solid #00ffb38a; /* Cor da borda do botão */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 22px; /* Tamanho da fonte */
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form .btn2:hover {
+  background-color: #05f3bfe0; /* Cor de fundo quando o mouse passa por cima (amarelo) */
+}
+
+/* imagem de fundo com logos */
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+  min-width: 900px; 
+  padding: 0;
+  background-position: center; /* Posiciona a imagem no centro da tela */
+}
+
+.small-image {
+  max-width: 400%; /* Defina o tamanho máximo desejado, como 50% da largura do contêiner */
+  max-height: 50%; /* Defina o tamanho máximo desejado, como 50% da altura do contêiner */
+}
+
+
+.display-1 {
+  text-align: center; /* Alinhar o texto à esquerda */
+  margin: 0; /* Remova a margem padrão para evitar espaços em branco */
+  font-family: 'time new rom','Cursive' ; /* Escolha sua fonte personalizada com efeito */
+  font-size: 35px; /* Escolha o tamanho de fonte desejado */
+  font-weight: bold; /* Escolha o estilo da fonte desejado (normal, bold, etc.) */
+  color: #f8f8f8; /* Escolha a cor do texto desejada */
+  position: center;
+  display: inline-block;
+  -webkit-text-stroke: 2px #00000070; /* Adiciona um contorno ao texto */
+}
+
+.display-2 {
+  text-align: left; /* Alinhar o texto à esquerda */
+  margin: 0; /* Remova a margem padrão para evitar espaços em branco */
+  font-family: 'time new rom','Cursive'; /* Escolha uma fonte desejada */
+  font-size: 22px; /* Escolha o tamanho de fonte desejado */
+  font-weight: bold; /* Escolha o estilo da fonte desejado (normal, bold, etc.) */
+  color: #f8f8f8; /* Escolha a cor do texto desejada */
+}
+
+
+
+
+
+/* Rodapé */
+footer {
+  background-color: rgba(0, 0, 0, 0.26); /* Fundo semi-transparente para o rodapé */
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Links no rodapé */
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #e9910c; /* Cor mais escura no hover */
+}
